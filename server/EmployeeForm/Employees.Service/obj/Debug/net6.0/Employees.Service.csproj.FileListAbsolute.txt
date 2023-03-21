@@ -1,0 +1,17 @@
+C:\Users\fathima.as\Desktop\project\EmployeeForm\Employees.Service\bin\Debug\net6.0\Employees.Service.deps.json
+C:\Users\fathima.as\Desktop\project\EmployeeForm\Employees.Service\bin\Debug\net6.0\Employees.Service.runtimeconfig.json
+C:\Users\fathima.as\Desktop\project\EmployeeForm\Employees.Service\bin\Debug\net6.0\Employees.Service.dll
+C:\Users\fathima.as\Desktop\project\EmployeeForm\Employees.Service\bin\Debug\net6.0\Employees.Service.pdb
+C:\Users\fathima.as\Desktop\project\EmployeeForm\Employees.Service\bin\Debug\net6.0\Employees.Domain.dll
+C:\Users\fathima.as\Desktop\project\EmployeeForm\Employees.Service\bin\Debug\net6.0\Employees.Domain.pdb
+C:\Users\fathima.as\Desktop\project\EmployeeForm\Employees.Service\obj\Debug\net6.0\Employees.Service.csproj.AssemblyReference.cache
+C:\Users\fathima.as\Desktop\project\EmployeeForm\Employees.Service\obj\Debug\net6.0\Employees.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fathima.as\Desktop\project\EmployeeForm\Employees.Service\obj\Debug\net6.0\Employees.Service.AssemblyInfoInputs.cache
+C:\Users\fathima.as\Desktop\project\EmployeeForm\Employees.Service\obj\Debug\net6.0\Employees.Service.AssemblyInfo.cs
+C:\Users\fathima.as\Desktop\project\EmployeeForm\Employees.Service\obj\Debug\net6.0\Employees.Service.csproj.CoreCompileInputs.cache
+C:\Users\fathima.as\Desktop\project\EmployeeForm\Employees.Service\obj\Debug\net6.0\Employees.Service.csproj.CopyComplete
+C:\Users\fathima.as\Desktop\project\EmployeeForm\Employees.Service\obj\Debug\net6.0\Employees.Service.dll
+C:\Users\fathima.as\Desktop\project\EmployeeForm\Employees.Service\obj\Debug\net6.0\refint\Employees.Service.dll
+C:\Users\fathima.as\Desktop\project\EmployeeForm\Employees.Service\obj\Debug\net6.0\Employees.Service.pdb
+C:\Users\fathima.as\Desktop\project\EmployeeForm\Employees.Service\obj\Debug\net6.0\Employees.Service.genruntimeconfig.cache
+C:\Users\fathima.as\Desktop\project\EmployeeForm\Employees.Service\obj\Debug\net6.0\ref\Employees.Service.dll

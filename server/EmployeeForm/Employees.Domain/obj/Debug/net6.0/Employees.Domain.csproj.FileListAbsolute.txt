@@ -1,0 +1,12 @@
+C:\Users\fathima.as\Desktop\project\EmployeeForm\Employees.Domain\bin\Debug\net6.0\Employees.Domain.deps.json
+C:\Users\fathima.as\Desktop\project\EmployeeForm\Employees.Domain\bin\Debug\net6.0\Employees.Domain.dll
+C:\Users\fathima.as\Desktop\project\EmployeeForm\Employees.Domain\bin\Debug\net6.0\Employees.Domain.pdb
+C:\Users\fathima.as\Desktop\project\EmployeeForm\Employees.Domain\obj\Debug\net6.0\Employees.Domain.csproj.AssemblyReference.cache
+C:\Users\fathima.as\Desktop\project\EmployeeForm\Employees.Domain\obj\Debug\net6.0\Employees.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fathima.as\Desktop\project\EmployeeForm\Employees.Domain\obj\Debug\net6.0\Employees.Domain.AssemblyInfoInputs.cache
+C:\Users\fathima.as\Desktop\project\EmployeeForm\Employees.Domain\obj\Debug\net6.0\Employees.Domain.AssemblyInfo.cs
+C:\Users\fathima.as\Desktop\project\EmployeeForm\Employees.Domain\obj\Debug\net6.0\Employees.Domain.csproj.CoreCompileInputs.cache
+C:\Users\fathima.as\Desktop\project\EmployeeForm\Employees.Domain\obj\Debug\net6.0\Employees.Domain.dll
+C:\Users\fathima.as\Desktop\project\EmployeeForm\Employees.Domain\obj\Debug\net6.0\refint\Employees.Domain.dll
+C:\Users\fathima.as\Desktop\project\EmployeeForm\Employees.Domain\obj\Debug\net6.0\Employees.Domain.pdb
+C:\Users\fathima.as\Desktop\project\EmployeeForm\Employees.Domain\obj\Debug\net6.0\ref\Employees.Domain.dll
