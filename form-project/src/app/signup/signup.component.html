@@ -1,0 +1,122 @@
+<main>
+    <div class="container-fluid w-100">
+        <h2 class="text-center text-white py-3">Employee Registration</h2>
+        <form>
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-5">
+                    <label>First Name</label>
+                    <input type="text" class="form-control" placeholder="Enter your first name">
+                </div>
+                <div class="col-lg-5">
+                    <label>Last Name</label>
+                    <input type="text" class="form-control" placeholder="Enter your last name">
+                </div>
+                <div class="col-lg-5">
+                    <label>Date of Birth</label>
+                    <input type="date" class="form-control">
+                </div>
+                <div class="col-lg-5">
+                    <label>Gender</label>
+                    <br>
+                    <div class="d-flex justify-content-around">
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio" value="male">Male
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio" value="female">Female
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio" value="others">Others
+                        </label>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <label>Email Address</label>
+                    <input type="email" class="form-control" placeholder="Enter your email address">
+                </div>
+                <div class="col-lg-5">
+                    <label>Confirm Email Address</label>
+                    <input type="email" class="form-control" placeholder="Re-enter your email address">
+                </div>
+                <div class="col-lg-5">
+                    <label>Password</label>
+                    <input type="password" class="form-control" placeholder="Enter your password">
+                </div>
+                <div class="col-lg-5">
+                    <label>Confirm Password</label>
+                    <input type="password" class="form-control" placeholder="Re-enter your password">
+                </div>
+                <div class="col-lg-5">
+                    <label>Phone Number</label>
+                    <input type="number" class="form-control" placeholder="Enter your phone number">
+                </div>
+                <div class="col-lg-5">
+                    <label>Alternate Phone Number</label>
+                    <input type="number" class="form-control" placeholder="Enter your alternate phone number">
+                </div>
+                <div class="col-lg-10">
+                    <label>Address</label>
+                    <textarea class="form-control" placeholder="Enter your address"></textarea>
+                    <br>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="col-lg-3 col-sm-4">
+                        <label>Country:&nbsp;</label>
+                        <select name="country" id="country">
+                            <option value="" selected="selected">Select country</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-sm-4">
+                        <label>State:&nbsp;</label>
+                        <select name="state" id="state">
+                            <option value="" selected="selected">Please select country first</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-sm-4">
+                        <label>City:&nbsp;</label>
+                        <select name="city" id="city">
+                            <option value="" selected="selected">Please select state first</option>
+                        </select>
+                    </div>
+                    <br>
+                </div>
+                <br><br>
+                <div class="d-flex justify-content-center">
+                    <div class="col-lg-5 col-sm-5">
+                        <label>Applying Position</label>
+                        <input type="text" class="form-control" placeholder="Enter the applying position">
+                    </div>
+                    <div class="col-lg-5 col-sm-5 px-5">
+                        <label>Type of Work</label>
+                        <br>
+                        <div class="d-flex justify-content-around">
+                            <label class="radio-inline">
+                                <input type="radio" name="optradio">Permanent
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="optradio">Temporary
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <label for="myfile">Upload photo:</label><br>
+                    <input type="file" id="photo-upload" name="photo-upload">
+                </div>
+                <div class="col-lg-5">
+                    <label for="myfile">Upload resume:</label><br>
+                    <input type="file" id="resume-upload" name="resume-upload">
+                </div>
+                <div class="col-lg-10">
+                    <label>Additional Notes</label>
+                    <textarea class="form-control" placeholder="Enter any additional notes (if any)"></textarea>
+                    <br>
+                </div>
+            </div>
+            <div class="col-md-12 text-center">
+                <button type="submit" class="btn btn-success w-25 mx-5">Submit</button>
+            </div>
+            <br>
+        </form>
+    </div>
+</main>

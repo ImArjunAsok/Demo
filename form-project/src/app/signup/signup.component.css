@@ -1,0 +1,16 @@
+main {
+    background-image: url('../../assets/5559852.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+h2 {
+    font-family:'Courier New', Courier, monospace;
+}
+
+label {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
