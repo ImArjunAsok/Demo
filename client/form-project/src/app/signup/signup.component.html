@@ -1,81 +1,135 @@
 <main>
     <div class="container-fluid w-100">
         <h2 class="text-center text-white py-3">Employee Registration</h2>
-        <form>
+        <form #form="ngForm" (ngSubmit)="saveData()">
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-5">
                     <label>First Name</label>
-                    <input type="text" class="form-control" placeholder="Enter your first name">
+                    <input type="text" name="fname" [(ngModel)]="model.firstName" #fname = "ngModel" class="form-control" placeholder="Enter your first name" required minlength="3" maxlength="25"
+                    pattern="[a-zA-Z][a-zA-Z ]+">
+                    <div class="text-danger" *ngIf="fname.invalid && fname.touched">
+                        <div *ngIf="fname.errors?.['minlength']">First Name is too short.</div>
+                        <div *ngIf="fname.errors?.['required']">First Name is required.</div>
+                        <div *ngIf="fname.errors?.['maxlength']">First Name is too long.</div>
+                        <div *ngIf="fname.errors?.['pattern']">Name is invalid.</div>
+                    </div>
                 </div>
                 <div class="col-lg-5">
                     <label>Last Name</label>
-                    <input type="text" class="form-control" placeholder="Enter your last name">
+                    <input type="text" name="lname" [(ngModel)]="model.lastName" #lname = "ngModel" class="form-control" placeholder="Enter your last name" required minlength="3" maxlength="25"
+                    pattern="[a-zA-Z][a-zA-Z ]+">
+                    <div class="text-danger" *ngIf="lname.invalid && lname.touched">
+                        <div *ngIf="lname.errors?.['minlength']">Last Name is too short.</div>
+                        <div *ngIf="lname.errors?.['required']">Last Name is required.</div>
+                        <div *ngIf="lname.errors?.['maxlength']">Last Name is too long.</div>
+                        <div *ngIf="lname.errors?.['pattern']">Name is invalid.</div>
+                    </div>
                 </div>
                 <div class="col-lg-5">
                     <label>Date of Birth</label>
-                    <input type="date" class="form-control">
+                    <input type="date" name="dob" [(ngModel)]="model.dateOfBirth" #dob= "ngModel" class="form-control">
                 </div>
                 <div class="col-lg-5">
                     <label>Gender</label>
                     <br>
                     <div class="d-flex justify-content-around">
                         <label class="radio-inline">
-                            <input type="radio" name="optradio" value="male">Male
+                            <input type="radio" name="gender" [(ngModel)]="model.gender" #gender = "ngModel" value="male">Male
                         </label>
                         <label class="radio-inline">
-                            <input type="radio" name="optradio" value="female">Female
+                            <input type="radio" name="gender" [(ngModel)]="model.gender" #gender = "ngModel" value="female">Female
                         </label>
                         <label class="radio-inline">
-                            <input type="radio" name="optradio" value="others">Others
+                            <input type="radio" name="gender" [(ngModel)]="model.gender" #gender = "ngModel" value="others">Others
                         </label>
                     </div>
                 </div>
                 <div class="col-lg-5">
                     <label>Email Address</label>
-                    <input type="email" class="form-control" placeholder="Enter your email address">
+                    <input type="email" name="email" [(ngModel)]="model.email" #email = "ngModel" class="form-control" placeholder="Enter your email address" required minlength="5" maxlength="70"
+                    pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                    <div class="text-danger" *ngIf="email.invalid && email.touched">
+                        <div *ngIf="email.errors?.['minlength']">Email is too short.</div>
+                        <div *ngIf="email.errors?.['required']">Email is required.</div>
+                        <div *ngIf="email.errors?.['maxlength']">Email is too long.</div>
+                        <div *ngIf="email.errors?.['pattern']">Email is invalid.</div>
+                    </div>
                 </div>
                 <div class="col-lg-5">
                     <label>Confirm Email Address</label>
-                    <input type="email" class="form-control" placeholder="Re-enter your email address">
+                    <input type="email" name="cemail" [(ngModel)]="model.cemail" #cemail="ngModel" class="form-control" placeholder="Re-enter your email address" required minlength="5" maxlength="70"
+                    pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                    <div class="text-danger" *ngIf="cemail.touched">
+                        <div *ngIf="email.value!=cemail.value">Re-entered email is wrong.</div>
+                        <div *ngIf="cemail.errors?.['required']">Confirm Email is required.</div>
+                    </div>
                 </div>
                 <div class="col-lg-5">
                     <label>Password</label>
-                    <input type="password" class="form-control" placeholder="Enter your password">
+                    <input type="password" name="password" [(ngModel)]="model.password" #password = "ngModel" class="form-control" placeholder="Enter your password" minlength="6" maxlength="25" required>
+                    <div class="text-danger" *ngIf="password.invalid && password.touched">
+                        <div *ngIf="password.errors?.['minlength']">Password is too small.</div>
+                        <div *ngIf="password.errors?.['maxlength']">Password is too long.</div>
+                        <div *ngIf="password.errors?.['required']">Password is required.</div>
+                    </div>
                 </div>
                 <div class="col-lg-5">
                     <label>Confirm Password</label>
-                    <input type="password" class="form-control" placeholder="Re-enter your password">
+                    <input type="password" name="cpassword" [(ngModel)]="model.cpassword" #cpassword="ngModel" class="form-control" placeholder="Re-enter your password"  minlength="6" maxlength="25"
+                    required>
+                    <div class="text-danger" *ngIf="cpassword.touched">
+                        <div *ngIf="password.value!=cpassword.value">Re-entered password is wrong.</div>
+                        <div *ngIf="cpassword.errors?.['required']">Confirm Password is required.</div>
+                    </div>
                 </div>
                 <div class="col-lg-5">
                     <label>Phone Number</label>
-                    <input type="number" class="form-control" placeholder="Enter your phone number">
+                    <input type="text" name="phonenumber" [(ngModel)]="model.phoneNumber" #pnumber = "ngModel" class="form-control" placeholder="Enter your phone number"pattern="[0-9]+" maxlength="10" minlength="10" required>
+                    <div class="text-danger" *ngIf="pnumber.invalid && pnumber.touched">
+                        <div *ngIf="pnumber.errors?.['required']">Phone Number is required.</div>
+                        <div *ngIf="pnumber.errors?.['minlength']">Phone Number is too short.</div>
+                        <div *ngIf="pnumber.errors?.['maxlength']">Phone Number is too long.</div>
+                        <div *ngIf="pnumber.errors?.['pattern']">Phone Number is invalid.</div>
+                    </div>
                 </div>
                 <div class="col-lg-5">
                     <label>Alternate Phone Number</label>
-                    <input type="number" class="form-control" placeholder="Enter your alternate phone number">
+                    <input type="text" name="altnumber" [(ngModel)]="model.alternateNumber" #anumber = "ngModel" class="form-control" placeholder="Enter your alternate phone number" pattern="[0-9]+" minlength="10" maxlength="10">
+                    <div class="text-danger" *ngIf="anumber.invalid && anumber.touched">
+                        <div *ngIf="anumber.errors?.['minlength']">Phone Number is too short.</div>
+                        <div *ngIf="anumber.errors?.['maxlength']">Phone Number is too long.</div>
+                        <div *ngIf="anumber.errors?.['pattern']">Phone Number is invalid.</div>
+                    </div>
                 </div>
                 <div class="col-lg-10">
                     <label>Address</label>
-                    <textarea class="form-control" placeholder="Enter your address"></textarea>
+                    <textarea name="address" [(ngModel)]="model.address" #address = "ngModel" class="form-control" placeholder="Enter your address" minlength="10" required></textarea>
+                    <div class="text-danger" *ngIf="address.invalid && address.touched">
+                        <div *ngIf="address.errors?.['required']">Address field is required.</div>
+                        <div *ngIf="address.errors?.['minlength']">Address is too short.</div>
+                    </div>
                     <br>
                 </div>
                 <div class="d-flex justify-content-center">
                     <div class="col-lg-3 col-sm-4">
                         <label>Country:&nbsp;</label>
-                        <select name="country" id="country">
-                            <option value="" selected="selected">Select country</option>
+                        <select name="country" id="country" [(ngModel)]="model.country" #country = "ngModel" (change)="onSelectCountry($event)">
+                            <option value="0" selected="selected">Select country</option>
+                            <option *ngFor="let country of countries" value= {{country.id}}>{{country.name}}</option>
                         </select>
                     </div>
                     <div class="col-lg-3 col-sm-4">
                         <label>State:&nbsp;</label>
-                        <select name="state" id="state">
-                            <option value="" selected="selected">Please select country first</option>
+                        <select name="state" id="state" [(ngModel)]="model.state" #state = "ngModel" (change)="onSelectState($event)">
+                            <option value="0" selected="selected">Please select country first</option>
+                            <option *ngFor="let state of states " value= {{state.id}}>{{state.name}}</option>
                         </select>
                     </div>
                     <div class="col-lg-3 col-sm-4">
                         <label>City:&nbsp;</label>
-                        <select name="city" id="city">
-                            <option value="" selected="selected">Please select state first</option>
+                        <select name="city" id="city" [(ngModel)]="model.city" #city = "ngModel">
+                            <option value="0" selected="selected">Please select state first</option>
+                            <option *ngFor="let city of cities " value= {{city.id}}>{{city.name}}</option>
                         </select>
                     </div>
                     <br>
@@ -84,37 +138,37 @@
                 <div class="d-flex justify-content-center">
                     <div class="col-lg-5 col-sm-5">
                         <label>Applying Position</label>
-                        <input type="text" class="form-control" placeholder="Enter the applying position">
+                        <input name="position" [(ngModel)]="model.appliedPosition" #position = "ngModel" type="text" class="form-control" placeholder="Enter the applying position">
                     </div>
                     <div class="col-lg-5 col-sm-5 px-5">
                         <label>Type of Work</label>
                         <br>
                         <div class="d-flex justify-content-around">
                             <label class="radio-inline">
-                                <input type="radio" name="optradio">Permanent
+                                <input type="radio" name="optradio" [(ngModel)]="model.typeOfWork" #type = "ngModel" value="permanent">Permanent
                             </label>
                             <label class="radio-inline">
-                                <input type="radio" name="optradio">Temporary
+                                <input type="radio" name="optradio" [(ngModel)]="model.typeOfWork" #type = "ngModel" value="temporary">Temporary
                             </label>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-5">
                     <label for="myfile">Upload photo:</label><br>
-                    <input type="file" id="photo-upload" name="photo-upload">
+                    <input type="file" id="photo-upload" name="photoUpload">
                 </div>
                 <div class="col-lg-5">
                     <label for="myfile">Upload resume:</label><br>
-                    <input type="file" id="resume-upload" name="resume-upload">
+                    <input type="file" id="resume-upload" name="resumeUpload">
                 </div>
                 <div class="col-lg-10">
                     <label>Additional Notes</label>
-                    <textarea class="form-control" placeholder="Enter any additional notes (if any)"></textarea>
+                    <textarea name="additional" [(ngModel)]="model.additionalNotes" #additional = "ngModel" class="form-control" placeholder="Enter any additional notes (if any)"></textarea>
                     <br>
                 </div>
             </div>
             <div class="col-md-12 text-center">
-                <button type="submit" class="btn btn-success w-25 mx-5">Submit</button>
+                <button type="submit" class="btn btn-success w-25 mx-5" [disabled]="form.invalid">Submit</button>
             </div>
             <br>
         </form>
