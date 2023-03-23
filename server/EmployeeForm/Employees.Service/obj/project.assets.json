@@ -2943,6 +2943,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Employees.Domain >= 1.0.0",
+      "Microsoft.AspNetCore.Identity >= 2.2.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.15",
       "Microsoft.EntityFrameworkCore >= 6.0.15",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.15",
@@ -2951,19 +2952,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\fathima.as\\.nuget\\packages\\": {}
+    "C:\\Users\\arjun.asok\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fathima.as\\Desktop\\project\\EmployeeForm\\Employees.Service\\Employees.Service.csproj",
+      "projectUniqueName": "C:\\Users\\arjun.asok\\Documents\\GitHub\\Demo\\server\\EmployeeForm\\Employees.Service\\Employees.Service.csproj",
       "projectName": "Employees.Service",
-      "projectPath": "C:\\Users\\fathima.as\\Desktop\\project\\EmployeeForm\\Employees.Service\\Employees.Service.csproj",
-      "packagesPath": "C:\\Users\\fathima.as\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fathima.as\\Desktop\\project\\EmployeeForm\\Employees.Service\\obj\\",
+      "projectPath": "C:\\Users\\arjun.asok\\Documents\\GitHub\\Demo\\server\\EmployeeForm\\Employees.Service\\Employees.Service.csproj",
+      "packagesPath": "C:\\Users\\arjun.asok\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\arjun.asok\\Documents\\GitHub\\Demo\\server\\EmployeeForm\\Employees.Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\fathima.as\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\arjun.asok\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2977,8 +2978,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\fathima.as\\Desktop\\project\\EmployeeForm\\Employees.Domain\\Employees.Domain.csproj": {
-              "projectPath": "C:\\Users\\fathima.as\\Desktop\\project\\EmployeeForm\\Employees.Domain\\Employees.Domain.csproj"
+            "C:\\Users\\arjun.asok\\Documents\\GitHub\\Demo\\server\\EmployeeForm\\Employees.Domain\\Employees.Domain.csproj": {
+              "projectPath": "C:\\Users\\arjun.asok\\Documents\\GitHub\\Demo\\server\\EmployeeForm\\Employees.Domain\\Employees.Domain.csproj"
             }
           }
         }
@@ -2993,6 +2994,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Identity": {
+            "target": "Package",
+            "version": "[2.2.0, )"
+          },
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
             "target": "Package",
             "version": "[6.0.15, )"

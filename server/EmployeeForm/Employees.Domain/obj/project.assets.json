@@ -1899,19 +1899,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\fathima.as\\.nuget\\packages\\": {}
+    "C:\\Users\\arjun.asok\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fathima.as\\Desktop\\project\\EmployeeForm\\Employees.Domain\\Employees.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\arjun.asok\\Documents\\GitHub\\Demo\\server\\EmployeeForm\\Employees.Domain\\Employees.Domain.csproj",
       "projectName": "Employees.Domain",
-      "projectPath": "C:\\Users\\fathima.as\\Desktop\\project\\EmployeeForm\\Employees.Domain\\Employees.Domain.csproj",
-      "packagesPath": "C:\\Users\\fathima.as\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fathima.as\\Desktop\\project\\EmployeeForm\\Employees.Domain\\obj\\",
+      "projectPath": "C:\\Users\\arjun.asok\\Documents\\GitHub\\Demo\\server\\EmployeeForm\\Employees.Domain\\Employees.Domain.csproj",
+      "packagesPath": "C:\\Users\\arjun.asok\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\arjun.asok\\Documents\\GitHub\\Demo\\server\\EmployeeForm\\Employees.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\fathima.as\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\arjun.asok\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
