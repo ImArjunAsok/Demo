@@ -21,5 +21,7 @@ namespace Employees.Domain.Models
         public string AppliedPosition { get; set; }  
         public string TypeOfWork { get; set; }
         public string? AdditionalNotes { get; set; }
+        public string? PhotoPath { get; set; }
+        public string? ResumePath { get; set; }
     }
 }

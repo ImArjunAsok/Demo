@@ -9,11 +9,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infrastructure", "infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "presentation", "presentation", "{05001A73-1026-43F6-957F-27FC050E3078}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Employees.Domain", "Employees.Domain\Employees.Domain.csproj", "{924A1BAD-99E5-42B3-A23A-157C4AB55949}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Employees.Domain", "Employees.Domain\Employees.Domain.csproj", "{924A1BAD-99E5-42B3-A23A-157C4AB55949}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Employees.Service", "Employees.Service\Employees.Service.csproj", "{74A62577-9C5F-4A00-BBB6-33F37EBBF28C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Employees.Service", "Employees.Service\Employees.Service.csproj", "{74A62577-9C5F-4A00-BBB6-33F37EBBF28C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Employees.WebApi", "Employees.WebApi\Employees.WebApi.csproj", "{4CF1601C-674F-4E19-8DE5-0DBF1EA83380}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Employees.WebApi", "Employees.WebApi\Employees.WebApi.csproj", "{4CF1601C-674F-4E19-8DE5-0DBF1EA83380}"
+	ProjectSection(ProjectDependencies) = postProject
+		{924A1BAD-99E5-42B3-A23A-157C4AB55949} = {924A1BAD-99E5-42B3-A23A-157C4AB55949}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
