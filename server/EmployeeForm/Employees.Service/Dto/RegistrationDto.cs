@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,5 +24,7 @@ namespace Employees.Service.Dto
         public string AppliedPosition { get; set; }
         public string TypeOfWork { get; set; }
         public string? AdditionalNotes { get; set; }
+        public IFormFile Photo { get; set; }
+        public IFormFile Resume { get; set; }
     }
 }

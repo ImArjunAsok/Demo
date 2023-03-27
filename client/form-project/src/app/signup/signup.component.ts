@@ -30,6 +30,8 @@ export class SignupComponent implements OnInit{
     city: '',
     appliedPosition: '',
     typeOfWork: '',
+    photo: '',
+    resume: '',
     additionalNotes: ''
   }
 
@@ -56,7 +58,26 @@ export class SignupComponent implements OnInit{
   }
 
 saveData() {
-  this.service.registerUser(this.model).subscribe({
+  const formData = new FormData();
+  formData.append('firstName', this.model.firstName);
+  formData.append('lastName', this.model.lastName);
+  formData.append('dateOfBirth', this.model.dateOfBirth);
+  formData.append('gender', this.model.gender);
+  formData.append('email', this.model.email);
+  formData.append('password', this.model.password);
+  formData.append('phoneNumber', this.model.phoneNumber);
+  formData.append('alternateNumber', this.model.alternateNumber);
+  formData.append('address', this.model.address);
+  formData.append('country', this.model.country);
+  formData.append('state', this.model.state);
+  formData.append('city', this.model.city);
+  formData.append('appliedPosition', this.model.appliedPosition);
+  formData.append('typeOfWork', this.model.typeOfWork);
+  formData.append('photo', this.model.photo);
+  formData.append('resume', this.model.resume);
+  formData.append('additionalNotes', this.model.additionalNotes);
+
+  this.service.registerUser(formData).subscribe({
     next: (res: any) => {
       console.log(res);
       if (res) {
@@ -66,5 +87,14 @@ saveData() {
         alert("Error in registration! Try again.");
     }
   })
+}
+
+onPhotoUploaded(e: any) {
+  console.log(e.target.files)
+  this.model.photo = e.target.files[0];
+}
+
+onResumeUploaded(e: any) {
+  this.model.resume = e.target.files[0];
 }
 }

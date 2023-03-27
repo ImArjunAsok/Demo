@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Employees.Service.Migrations
 {
-    public partial class CreateTable : Migration
+    public partial class Create : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -40,6 +40,8 @@ namespace Employees.Service.Migrations
                     AppliedPosition = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     TypeOfWork = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     AdditionalNotes = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    PhotoPath = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ResumePath = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     Email = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),

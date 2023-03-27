@@ -155,11 +155,11 @@
                 </div>
                 <div class="col-lg-5">
                     <label for="myfile">Upload photo:</label><br>
-                    <input type="file" id="photo-upload" name="photoUpload">
+                    <input type="file" id="photo-upload" name="photoUpload" (change)="onPhotoUploaded($event)">
                 </div>
                 <div class="col-lg-5">
                     <label for="myfile">Upload resume:</label><br>
-                    <input type="file" id="resume-upload" name="resumeUpload">
+                    <input type="file" id="resume-upload" name="resumeUpload" (change)="onResumeUploaded($event)">
                 </div>
                 <div class="col-lg-10">
                     <label>Additional Notes</label>
