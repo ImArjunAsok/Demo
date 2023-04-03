@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Internal;
+using org.apache.pdfbox.pdmodel;
+using org.apache.pdfbox.util;
 
 namespace Employees.WebApi.Areas.User.Controllers
 {
@@ -28,5 +30,21 @@ namespace Employees.WebApi.Areas.User.Controllers
             var res = await _registrationService.RegisterUserAsync(dto);
             return Ok(res);
         }
+
+        [HttpPost("upload")]
+        public async Task<IActionResult> Upload(IFormFile file)
+        {
+            if (file == null || file.Length == 0)
+                return BadRequest("No file uploaded.");
+
+            using (var stream = new MemoryStream())
+            {
+                await file.CopyToAsync(stream);
+                var buffer = stream.ToArray();
+                var text = _registrationService.ExtractTextFromPdf(buffer);
+                return Ok(text);
+            }
+        }
+
     }
 }
