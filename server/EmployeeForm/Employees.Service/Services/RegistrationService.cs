@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
+using org.apache.pdfbox.pdmodel;
+using org.apache.pdfbox.util;
 
 namespace Employees.Service.Services
 {
@@ -84,6 +86,18 @@ namespace Employees.Service.Services
             await _db.SaveChangesAsync();
             return true;
         }
-        
+
+        public async Task<string> ExtractTextFromPdf(byte[] pdfBytes)
+        {
+            using (var stream = new MemoryStream(pdfBytes))
+            {
+                var stringify = stream.ToString();
+                var document = PDDocument.load(stringify);
+                var stripper = new PDFTextStripper();
+                var text = stripper.getText(document);
+                document.close();
+                return text;
+            }
+        }
     }
 }

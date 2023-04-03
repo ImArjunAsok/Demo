@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "luKend421so9u59riEltSMk0a6Uf1amqjKAdg9BgI0yp/CmKh7Pffwzh7tPidK+XJjtIKlvpA/CmJzuOYDTS3A==",
+  "dgSpecHash": "pghNUAvj6ZXXwYlOerIpUcPq0U53AoYNE/XVo4FGCJRxdWmWDkAy65kON8JaFrm80WBKlYqHGuxGkjIfTfORdQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\arjun.asok\\Documents\\GitHub\\Demo\\server\\EmployeeForm\\Employees.Service\\Employees.Service.csproj",
   "expectedPackageFiles": [
@@ -57,6 +57,7 @@
     "C:\\Users\\arjun.asok\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\arjun.asok\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\arjun.asok\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\arjun.asok\\.nuget\\packages\\pdfbox\\1.1.1\\pdfbox.1.1.1.nupkg.sha512",
     "C:\\Users\\arjun.asok\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\arjun.asok\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\arjun.asok\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",
@@ -76,5 +77,16 @@
     "C:\\Users\\arjun.asok\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512",
     "C:\\Users\\arjun.asok\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Pdfbox 1.1.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Pdfbox",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }
